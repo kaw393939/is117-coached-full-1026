@@ -2,10 +2,10 @@
 
 AI-drafted **coaching simulation**, not a transcript, real student learning evidence or a grade. A separate agent played the learner. Personal details and unrelated chat are excluded.
 
-- **Feature:** BRAND-001 — built and checked; keep/merge pending.
+- **Feature:** BRAND-001 — kept, merged and published; actual delivery linked below.
 - **Date:** 2026-10-26
 - **Available context:** This separate-agent dialogue; real SSH clone, files, commands, sources and browser captures.
-- **Review status:** Reviewed for accuracy/removal by the role-play learner on 2026-10-26 before first excerpts were staged or pushed; approved as written. This is record approval only, not a grade or keep decision.
+- **Review status:** Reviewed for accuracy/removal by the role-play learner on 2026-10-26 before first excerpts were staged or pushed; approved as written. The optional transfer paraphrase below was also separately shown and approved before publication. Accuracy approval is not a grade or keep decision.
 
 ## Contributions and help
 
@@ -24,4 +24,8 @@ Before learner review, checks caught missing headline whitespace; visual review 
 
 [SPEC and files](SPEC.md) · [Issue #1 / PR, CI and delivery record](https://github.com/kaw393939/is117-coached-full-1026/issues/1)
 
-**Next:** review the checked PR and decide whether to keep it. Accuracy approval does not establish learning.
+## Optional next request
+
+Paraphrase: learner independently requested Size help above the size buttons, revealing how to measure an existing shirt. After the coach noted missing verified garment measurements, learner ruled out an invented chart or fit promise. This boundary explanation is assisted. No follow-up was built.
+
+**Next:** agree the scope of that optional cycle. [PR #2](https://github.com/kaw393939/is117-coached-full-1026/pull/2) merged after checked-head review; [main CI/publication](https://github.com/kaw393939/is117-coached-full-1026/actions/runs/40272223895) succeeded. The learner approved keeping the coherent identity and separately chose publication. Accuracy approval does not establish learning.
