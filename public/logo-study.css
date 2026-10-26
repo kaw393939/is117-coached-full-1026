@@ -1,0 +1,167 @@
+/* A proposal board only: shared storefront and guide styles stay untouched. */
+.logo-study {
+  --color-paper: #f5f1e8;
+  --color-ink: #213b32;
+  --color-muted: #506158;
+  --color-line: #c6cbbb;
+}
+
+.logo-study .logo-study-wrap {
+  width: min(100% - 3rem, 1120px);
+  margin-inline: auto;
+}
+
+.logo-study .logo-study-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.5rem;
+  padding-block: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.logo-study .logo-study-intro {
+  max-width: 740px;
+  padding-block: 2.5rem;
+}
+
+.logo-study .logo-study-intro h1 {
+  margin-block: 1rem 1.5rem;
+  font-family: Arial, sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+}
+
+.logo-study .logo-study-notes p {
+  max-width: 72ch;
+  margin-top: 1.25rem;
+}
+
+.logo-study .logo-study-intro > p:last-child {
+  max-width: 58ch;
+  font-size: 1.1rem;
+}
+
+.logo-study .logo-study-master,
+.logo-study .logo-study-one-ink {
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 3rem;
+  border: 1px solid var(--color-line);
+}
+
+.logo-study .logo-study-master {
+  min-height: 250px;
+  background: #e5e6da;
+}
+
+.logo-study .logo-study-master img {
+  width: min(100%, 660px);
+  height: auto;
+}
+
+.logo-study figcaption {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+}
+
+.logo-study .logo-study-section {
+  padding-block: 3rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.logo-study .logo-study-section-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo-study .logo-study-section-heading h2,
+.logo-study .logo-study-notes h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: -0.045em;
+}
+
+.logo-study .logo-study-size-row + .logo-study-size-row {
+  margin-top: 1.5rem;
+}
+
+.logo-study .logo-study-size-label {
+  margin-bottom: 0.6rem;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.logo-study .logo-study-nav-sample {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 84px;
+  padding: 1.25rem 1.5rem;
+  border-block: 1px solid var(--color-line);
+}
+
+.logo-study .logo-study-nav-sample img {
+  height: auto;
+}
+
+.logo-study .logo-study-nav-sample nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.logo-study .logo-study-156 {
+  width: 156px;
+}
+
+.logo-study .logo-study-140 {
+  width: 140px;
+}
+
+.logo-study .logo-study-112 {
+  width: 112px;
+}
+
+.logo-study .logo-study-one-ink {
+  min-height: 220px;
+  background: #fff;
+}
+
+.logo-study .logo-study-one-ink img {
+  width: min(100%, 380px);
+  height: auto;
+}
+
+@media (width <= 620px) {
+  .logo-study .logo-study-wrap {
+    width: calc(100% - 2rem);
+  }
+
+  .logo-study .logo-study-section-heading {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .logo-study .logo-study-master,
+  .logo-study .logo-study-one-ink {
+    min-height: 160px;
+    padding: 1.5rem;
+  }
+
+  .logo-study .logo-study-nav-sample {
+    gap: 1rem;
+    padding-inline: 0;
+  }
+
+  .logo-study .logo-study-nav-sample nav {
+    gap: 1rem;
+  }
+}

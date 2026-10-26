@@ -1,0 +1,155 @@
+/* The two studies share offer and palette; composition and type differ. */
+.study,
+.comparison {
+  --color-paper: #f5f1e8;
+  --color-ink: #213b32;
+  --color-accent: #efd08c;
+  --color-soft: #e5e6da;
+}
+
+.study-wordmark {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.study .product-section {
+  padding-top: 36px;
+}
+
+.comparison h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+
+.study .product-information h1 {
+  color: var(--color-ink);
+  font-size: clamp(2.8rem, 5.6vw, 5.4rem);
+}
+
+.study .product-intro {
+  max-width: 31ch;
+}
+
+.study .product-visual {
+  min-height: 0;
+}
+
+.study .shirt-image {
+  height: 420px;
+  object-fit: contain;
+}
+
+.study-notes {
+  padding-top: 36px;
+  padding-bottom: 48px;
+  border-top: 1px solid #c6cbbb;
+}
+
+.study-notes p {
+  max-width: 78ch;
+}
+
+.study-a .product-visual {
+  background: linear-gradient(130deg, #e5e6da 65%, #f1dcb7 65%);
+  border-top: 7px solid var(--color-ink);
+}
+
+.study-a .product-information h1 {
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: -0.055em;
+}
+
+.study-a .visual-label {
+  border-bottom: 1px solid #b9c4b9;
+}
+
+.study-a .image-caption {
+  border-top: 1px solid #b9c4b9;
+}
+
+.study-b .product-visual {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #c6cbbb;
+  background: #e5e6da;
+  border-radius: 4px 58px 4px 4px;
+}
+
+.study-b .product-visual::before {
+  position: absolute;
+  right: -50px;
+  bottom: 50px;
+  width: 240px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-accent);
+  content: "";
+}
+
+.study-b .shirt-image,
+.study-b .visual-label,
+.study-b .image-caption {
+  position: relative;
+  z-index: 1;
+}
+
+.study-b .shirt-image {
+  transform: rotate(-4deg);
+}
+
+.study-b .product-information h1 {
+  font-family: Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -0.045em;
+}
+
+.study-b .visual-label {
+  z-index: 2;
+  align-self: start;
+  background: var(--color-ink);
+  color: #f5f1e8;
+  padding: 10px 14px;
+}
+
+.comparison-wrap {
+  max-width: 1440px;
+  padding: 40px 28px;
+  margin: auto;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 36px 0;
+}
+
+.comparison iframe {
+  display: block;
+  width: 100%;
+  height: 980px;
+  border: 1px solid #c6cbbb;
+  background: white;
+}
+
+@media (width <= 700px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .study .shirt-image {
+    height: 210px;
+  }
+
+  .study .product-section {
+    padding-top: 22px;
+  }
+
+  .study-b .product-visual::before {
+    width: 160px;
+    bottom: 40px;
+  }
+}
