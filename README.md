@@ -1,6 +1,8 @@
 # Side Street — completed IS117 coaching simulation
 
-This is a separate, completed branding prototype built from a fresh SSH clone. A separate agent played the learner; it is **instructor evaluation evidence**, not a student submission or proof of learning. BRAND-001 is built and checked; keep/merge and publication are pending.
+This is a separate, completed branding prototype built from a fresh SSH clone. A separate agent played the learner; it is **instructor evaluation evidence**, not a student submission or proof of learning. BRAND-001 was kept after reviewed-head CI passed and PR #2 merged. The fictional demo is published and browser-verified.
+
+**[Open the completed shop](https://kaw393939.github.io/is117-coached-full-1026/)** · [Live style guide](https://kaw393939.github.io/is117-coached-full-1026/styleguide.html)
 
 **Starting the assignment?** Use the [unfinished IS117 template and its README](https://github.com/kaw393939/is117-brand-studio#readme). This repository preserves an example, not the student starting point.
 
