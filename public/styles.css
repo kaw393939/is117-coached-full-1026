@@ -1,18 +1,16 @@
-/* Shared brand tokens. Change these after you agree on your brand direction.
-   Both the storefront and the live style guide use this file. */
+/* Side Street: shared identity tokens, type, components and layout.
+   The storefront, live guide and working studio use this single system. */
 :root {
-  --color-paper: #f6f5f0;
-  --color-ink: #171a18;
-  --color-muted: #5a615b;
-  --color-line: #d1d5cc;
-  --color-accent: #e3ef56;
-  --color-soft: #e8eae1;
+  --color-paper: #f5f1e8;
+  --color-ink: #213b32;
+  --color-muted: #506158;
+  --color-line: #c6cbbb;
+  --color-accent: #efd08c;
+  --color-soft: #e5e6da;
   --color-white: #fff;
   --color-danger: #992e28;
-  --font-body:
-    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
-  --font-display:
-    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
+  --font-body: arial, helvetica, sans-serif;
+  --font-display: arial, helvetica, sans-serif;
   --font-mono: ui-monospace, sfmono-regular, consolas, monospace;
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -209,7 +207,7 @@ p + p {
 }
 
 .wordmark {
-  width: 150px;
+  width: 156px;
   height: auto;
 }
 
@@ -257,14 +255,19 @@ p + p {
 .product-section {
   display: grid;
   grid-template-columns: 1.13fr 1fr;
-  gap: clamp(3rem, 7vw, 8rem);
-  padding-block: var(--space-5) 5rem;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-block: 2.25rem 3.5rem;
   align-items: start;
 }
 
 .product-visual {
   position: relative;
-  background: var(--color-soft);
+  background: linear-gradient(
+    130deg,
+    var(--color-soft) 65%,
+    var(--color-accent) 65%
+  );
+  border-top: 7px solid var(--color-ink);
 }
 
 .visual-label {
@@ -279,9 +282,9 @@ p + p {
 
 .shirt-image {
   width: 100%;
-  height: auto;
-  aspect-ratio: 800 / 880;
+  height: 440px;
   object-fit: contain;
+  padding-top: 1rem;
 }
 
 .image-caption {
@@ -305,14 +308,19 @@ p + p {
   padding-block: 1rem;
 }
 
-.product-information h1 {
-  margin-top: 1.6rem;
+.brand-headline {
+  margin-top: 1.1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5.6vw, 5.4rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.055em;
 }
 
 .product-intro {
   font-size: 1.2rem;
   line-height: 1.5;
-  margin-top: 1.8rem;
+  margin-top: 1.25rem;
   letter-spacing: -0.025em;
 }
 
@@ -505,6 +513,24 @@ legend {
   margin: 0;
   font-weight: 500;
   text-align: right;
+}
+
+.styling-tip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding-block: 2.5rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.styling-tip h2 {
+  margin-top: 0.75rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.styling-tip > p {
+  max-width: 46ch;
+  align-self: center;
 }
 
 .bag-section {
@@ -763,13 +789,22 @@ legend {
 }
 
 .logo-small {
-  width: 110px;
+  width: 112px;
+  height: auto;
+}
+
+.logo-nav-desktop {
+  width: 156px;
+  height: auto;
+}
+
+.logo-nav-phone {
+  width: 140px;
   height: auto;
 }
 
 .logo-mono {
   width: 190px;
-  filter: brightness(0);
 }
 
 .logo-variant p,
@@ -835,11 +870,6 @@ legend {
 }
 
 .type-display {
-  font-family: var(--font-display);
-  font-size: clamp(2.5rem, 4.5vw, 5rem);
-  font-weight: 550;
-  letter-spacing: -0.075em;
-  line-height: 1;
   max-width: 700px;
 }
 
@@ -967,8 +997,8 @@ legend {
     align-items: start;
   }
 
-  .product-information h1 {
-    font-size: clamp(3.4rem, 7vw, 5rem);
+  .brand-headline {
+    font-size: clamp(2.8rem, 5.6vw, 5.4rem);
   }
 
   .product-information {
@@ -1026,7 +1056,7 @@ legend {
   }
 
   .wordmark {
-    width: 130px;
+    width: 140px;
   }
 
   .main-nav {
@@ -1065,7 +1095,8 @@ legend {
   }
 
   .shirt-image {
-    max-height: 530px;
+    height: 180px;
+    padding-top: 0.5rem;
   }
 
   .product-information {
@@ -1073,14 +1104,14 @@ legend {
     padding: 0;
   }
 
-  .product-information h1 {
-    font-size: clamp(4.2rem, 13vw, 7rem);
-    margin-top: 1rem;
+  .brand-headline {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+    margin-top: 0.8rem;
   }
 
   .product-intro {
     font-size: 1.1rem;
-    margin-top: 1.4rem;
+    margin-top: 1rem;
   }
 
   .product-description {
@@ -1089,6 +1120,12 @@ legend {
 
   .product-facts {
     margin-top: 1.5rem;
+  }
+
+  .styling-tip {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-block: 2rem;
   }
 
   .bag-section {
